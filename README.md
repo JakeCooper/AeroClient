@@ -1,7 +1,5 @@
 # What is this?
 
-A Matrix manipulation library used to recreate different wireframe objects from text files. Sample text files included. 
+The Aero Spectator Client is a viewer used to observe the UVIC Aeronautics Club's UAV while it is in flight. Using the Google Maps API, the plane can be tracked and information about the plane can be received while the UAV is in flight.
 
-#How do I use it?
-
-To assign an input, go to line 17 in WireFrame.c and change "input.txt" to whatever file you would like as your input.
+DEPENDENCY ISSUES! Currently, this application leverages files not yet opened sourced. Due to this, running these files might not be pretty/work at all.
