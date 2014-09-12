@@ -1,0 +1,157 @@
+#logo {
+	margin-left: 5%;
+	display: inline-block;
+	float: left;
+}
+
+#connection-status {
+	float: right;
+	color: #FFF;
+	padding: 20px;
+	font-weight: bold;
+}
+
+#connection-status button {
+	margin-left: 20px;
+}
+
+#connected {
+
+}
+
+#gmaps-container {
+	width: 65%;
+	margin-left: 0%;
+	float: right;
+	height: 80%;
+}
+
+#map-selector {
+	margin-bottom: 8px;
+}
+
+.map-selector-radio {
+	position: absolute;
+	clip: rect(0px, 0px, 0px, 0px);
+}
+
+.map-selector-radio-label {
+	margin-left: 0px;
+	margin-right: -0.33em;
+	border: 1px solid #d3d3d3;
+	background: #e6e6e6;
+	font-weight: normal;
+	color: rgb(85, 85, 85);
+	font-family: Verdana,Arial,sans-serif;
+	font-size: 0.8em;
+	text-decoration: none;
+	display: inline-block;
+	position: relative;
+	cursor: pointer;
+}
+
+.map-selector-radio-label:not(.radio-checked):hover {
+	background: #dadada;
+	border: 1px solid #999999;
+}
+
+.radio-checked {
+	border: 1px solid #aaaaaa;
+	background: #ffffff;
+}
+
+.radio-left {
+	border-bottom-left-radius: 4px;
+	border-top-left-radius: 4px;
+}
+
+.radio-right {
+	border-bottom-right-radius: 4px;
+	border-top-right-radius: 4px;
+}
+
+.map-selector-text {
+	display: block;
+	line-height: normal;
+	padding: 0.4em 0.8em;
+}
+
+#gmaps {
+	width: 100%;
+	height: 100%;
+}
+
+.status-connected {
+	color: #0cff00;
+}
+
+.status-disconnected {
+	color: #ff0808;
+}
+
+#filter-wrapper{
+    overflow:auto;
+    border-right: 1px solid black;
+    height:85%;
+}
+
+#console-wrapper {
+    height:70%;
+    overflow:auto;
+    border-bottom: 1px solid black;
+}
+
+#console-wrapper *{
+    font-size:11px !important; 
+}
+
+#input-wrapper {
+
+}
+
+.console-date-field{
+    width:150px;
+}
+
+#input-field{
+    width:100%;
+}
+
+.navbar-brand {
+	padding: 22px 5px 0px 5px;
+}
+
+.navbar-nav > li > a {
+    padding: 24px 10px;
+    margin-left: 8px;
+}
+
+#context-menu {
+	background-color: #FFFFFF;
+	width: 170px;
+	padding: 0px;
+	border: 1px;
+	cursor: pointer;
+	border-left: 1px solid #CCCCCC;
+	border-top: 1px solid #CCCCCC;
+	border-right: 1px solid #676767;
+	border-bottom: 1px solid #676767;
+	text-decoration: none;
+}
+
+.context-menu-item {
+	font-family: arial,helvetica,sans-serif;
+	font-size: 12px;
+	text-align: left;
+	line-height: 30px;
+	border-left: 0px;
+	border-top: 0px;
+	border-right: 0px;
+	padding: 3px 5px 3px 5px;
+	background-repeat: no-repeat;
+	background-position: 4px center;
+}
+
+.context-menu-hover {
+	background-color:#d6e9f8;
+}

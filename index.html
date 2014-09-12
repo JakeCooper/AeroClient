@@ -1,0 +1,74 @@
+<html>
+    <head>
+		<script src='../shared/js/jquery-1.10.2.js' type='text/javascript'></script>
+		<script src='../shared/js/jquery-ui-1.10.4.custom.min.js' type='text/javascript'></script>
+        <script type="text/javascript" src="../shared/js/bootstrap.min.js"></script>
+        <link href="../shared/css/bootstrap.min.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+        <title>System Analyst - AERO Client</title>
+    </head>
+    <body>
+        <nav class='navbar navbar-inverse'>
+			<div id="logo">
+				<a href="#">
+					<img src="../shared/images/AeroLogo.png"></img>
+				</a>
+			</div>
+            <a class='navbar-brand'>Spectator Client</a>
+			<div id="connection-status">
+				Status: <span id="connected">Disconnected</span>
+				<button type="button" id="connect-btn" class="btn btn-default btn-sm">
+					Connect
+				</button>
+			</div>
+        </nav>
+        <div class='container'>
+            <div class='row'>
+                <div class='col-sm-2' id='filter-wrapper'>
+                    <h4>System Status</h4>
+                    <table class='table' id='filters-levels-table'>
+                        <tbody id='filters-levels-table-body'>
+                            <!--<tr>
+                                <td>All</td>
+                                <td><button id="ALL-filter-button" class='btn btn-primary' onclick="disp.applyFilter('ALL');" >Hide</button></td>
+                            </tr>-->
+                            <tr>
+                                <td>Airspeed: 0</td>
+                            </tr>
+                            <tr>
+                                <td>Altitude: 0</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="gmaps-container">
+				 <div id="map-selector">
+					<input type="radio" class="map-selector-radio" id="AUVSI" name="radio" checked="checked">
+						<label class="map-selector-radio-label radio-left radio-checked" for="AUVSI">
+							<span class="map-selector-text">
+							AUVSI Map
+							</span>
+						</label>
+					<input type="radio" class="map-selector-radio" id="USC" name="radio">
+						<label class="map-selector-radio-label radio-right" for="USC">
+							<span class="map-selector-text">
+							USC Map
+							</span>
+						</label>
+				</div>
+				<div id="gmaps">
+				</div>
+			</div>			
+			<div id="image-monitor">
+				<canvas id="image-canvas">
+					hi
+				</canvas>
+			</div>
+        </div>
+    </body>
+    <script src='../shared/sockets.js' type='text/javascript'></script>
+    <script src='script.js' type='text/javascript'></script>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&key=AIzaSyA2UZ_CRmFy6CPAwWAqgRXNZ2FP1mc3vD4"></script>
+	<script type="text/javascript" src="aero.js"></script>
+</html>
